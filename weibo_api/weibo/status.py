@@ -106,7 +106,7 @@ class Statuses(Base):
             status = Status(mblog.id, None, self._session)
             status.text = mblog.raw_data().get('text')
             status.created_at = mblog.raw_data().get('created_at')
-            status.source = mblog.raw_data().get('mblog.source')
+            status.source = mblog.raw_data().get('source')
             status.thumbnail_pic = mblog.raw_data().get('thumbnail_pic')
             status.bmiddle_pic = mblog.raw_data().get('bmiddle_pic')
             status.original_pic = mblog.raw_data().get('original_pic')

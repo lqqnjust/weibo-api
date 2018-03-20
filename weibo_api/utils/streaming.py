@@ -149,7 +149,7 @@ def streaming(name_in_json=None, use_cache=True):
             if use_cache and self._cache and name in self._cache:
                 cache = self._cache[name]
             else:
-                self._get_data()
+                self._get_data()['data']
                 if self._data and name in self._data:
                     cache = self._data[name]
                 else:
